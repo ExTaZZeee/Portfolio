@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lycée la Fayette</title>
+        <link href="../index/cantine.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <ul class="boutonhaut">
+                <li class="boutonhaut1"><a href="#">ELEVES</a></li>
+                <li class="boutonhaut1"><a href="#">PARENTS</a></li>
+                <li class="boutonhaut1"><a href="#">ENSEINGNANTS</a></li>
+            </ul>
+            <img id="logo" src="../image/logo.png">
+            <ul class="navbar">
+                <li class="boutonnav"><a href="../index.html">ACCUEIL </a></li>
+                <li class="boutonnav">
+                    <a href="#">SERVICE DU LYCEE</a>
+                    <ul class="dropdown">
+                        <li class="boutonnav"><a href="../index/cantine.html">MENU DE LA CANTINE</a></li>
+                        <li class="boutonnav"><a href="../index/intendance.html">INTENDANCE</a></li>
+                    </ul>
+                </li>
+                <li class="boutonnav">
+                    <a href="#">FORMATION GENERALES</a>
+                    <ul class="dropdown">
+                        <li class="boutonnav"><a href="#">CARTE DES FORMATION</a></li>
+                        <li class="boutonnav"><a href="#">BAC GENERAL</a></li>
+                    </ul>
+                </li>
+                <li class="boutonnav">
+                    <a href="#">SERVICE DU LYCEE</a>
+                    <ul class="dropdown">
+                        <li class="boutonnav"><a href="#">MENU DE LA CANTINE</a></li>
+                        <li class="boutonnav"><a href="#">INTENDANCE</a></li>
+                    </ul>
+                </li>
+                <li class="boutonnav">
+                    <a href="#">BAC PROFESSIONNELS</a>
+                    <ul class="dropdown">
+                        <li class="boutonnav"><a href="#">CARTE DES FORMATION</a></li>
+                        <li class="boutonnav"><a href="#">TROISIEME PREPA METIER</a></li>
+                    </ul>
+                </li>
+                <li class="boutonnav">
+                    <a href="#">FORMATION POST-BAC</a>
+                    <ul class="dropdown">
+                        <li class="boutonnav"><a href="#">BTS CIEL OPTION A</a></li>
+                        <li class="boutonnav"><a href="#">BTS CIEL OPTION B</a></li>
+                    </ul>
+                </li>
+                <li class="boutonnav">
+                    <a href="#">ENTREPRISES</a>
+                    <ul class="dropdown">
+                        <li class="boutonnav"><a href="#">STAGE</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header> 
+    <section class="section1">
+        <article class="cantine">
+            <p class="titre_cantine">MENU DE LA CANTINE</p>
+            <p class="text_cantine">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in hendrerit nisi. Aliquam id est non nibh consequat ullamcorper ornare eu nunc. Praesent eget rhoncus purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas euismod pharetra placerat. Vestibulum varius metus eu blandit eleifend. Quisque ut diam in est hendrerit euismod nec sed diam. Vivamus fermentum magna libero, non efficitur neque iaculis eu. Sed convallis arcu nec elit congue consequat.</p>
+        </article>
+        <div><aside class="nuage">
+            <p class="text_nuage">NUAGE</p>
+            <img class="image_nuage" src="../image/nuage.png">
+        </aside>
+        <aside class="image_slider">
+            <p class="lycee100ans">LE LYCEE LA FAYETTE A 100 ANS</p>
+            <div class="container">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="../image/image1.jpeg"></div>
+                        <div class="swiper-slide"><img src="../image/image2.jpeg"></div>
+                        <div class="swiper-slide"><img src="../image/image3.jpeg"></div>
+                        <div class="swiper-slide"><img src="../image/image4.jpeg"></div>
+
+                    </div>
+                        <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+            <script>
+                const swiper = new Swiper('.swiper', {
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                loop: true,
+
+                pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                },
+
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+                });
+            </script>
+        </aside></div>
+    </section>
+    <footer>
+        <p class="footer_lafayette"> Lycée La Fayette</p>
+        <span class="ligne_haut"> 
+            <p id="celestin">Place des Célestins</p>
+            <p id="fontaineroux">847, Route de Fontaineroux</p>
+        </span>
+        <span class="ligne_bas"> 
+            <p id="champagne">7743000 CHAMPAGNE-SUR-SEINE</p>
+            <p id="hericy">77850 HERICY</p>
+        </span>
+    </footer>
+    </body>
